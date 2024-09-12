@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import Slider from './components/Slider';
  import About from './pages/About';
  import {Routes,Route} from 'react-router-dom'
  import Register from './forms/Register';
@@ -16,6 +15,7 @@ import Slider from './components/Slider';
     <>
       <div className="App">
      <Navbar/>
+
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/register" element={<Register/>}/>
