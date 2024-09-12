@@ -10,6 +10,7 @@ import Slider from './components/Slider';
  import Service from './pages/Service';
  import Pricing from './forms/pricing';
  import Login from './pages/login';
+ import Candidate from './pages/Candidate';
  function App() {
   return (
     <>
@@ -17,11 +18,12 @@ import Slider from './components/Slider';
      <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/candidate" element={<Candidate/>}/>
        </Routes>
       <Footer/>
     
