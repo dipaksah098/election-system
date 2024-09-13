@@ -10,7 +10,8 @@ import Footer from './components/Footer';
  import Pricing from './forms/pricing';
  import Login from './pages/login';
  import Candidate from './pages/Candidate';
- function App() {
+ import Contactus from './pages/Contactus';
+  function App() {
   return (
     <>
       <div className="App">
@@ -24,6 +25,7 @@ import Footer from './components/Footer';
         <Route path="/about" element={<About/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/candidate" element={<Candidate/>}/>
+        <Route path="/contactus" element={< Contactus/>}/>
        </Routes>
       <Footer/>
     
