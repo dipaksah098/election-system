@@ -2,6 +2,10 @@ from rest_framework import generics
 from .models import *
 from .serializers import *
 
+
+class SliderList(generics.ListCreateAPIView):
+    queryset = Slider.objects.all()
+    serializer_class = SliderSerializer
 class CandidateList(generics.ListCreateAPIView):
     queryset = Candidate.objects.all()
     serializer_class = CandidateSerializer

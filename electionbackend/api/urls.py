@@ -5,6 +5,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('api/candidate/', views.CandidateList.as_view(), name='candidate'),
+    path ('api/service/', views.ServiceList.as_view(), name='service'),
+    path ('api/about/', views.AboutList.as_view(), name='about'),
+    path ('api/slider/', views.SliderList.as_view(), name='slider'),
+    path ('api/voters/', views.VotersList.as_view(), name='voters'),
+    
+    
+    
     
 ]
 

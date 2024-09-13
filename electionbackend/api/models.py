@@ -69,7 +69,19 @@ class Voters(models.Model):
         self.image.delete()
         self.citizenship_front.delete()
         self.citizenship_back.delete()    
+
+
+class Slider(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='slider_images')  
+      
+    def __str__(self):
+        return self.name
     
-    
-    
+    def delete_image(self) -> None:
+        """Delete the image associated with this candidate.
+
+        This method takes no arguments and returns None.
+        """
+        self.image.delete()
     
