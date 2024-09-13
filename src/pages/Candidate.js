@@ -14,11 +14,12 @@ const Candidate = () => {
           <img src="https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/437926519_1528671534360715_3707691206217530104_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BHpBlhBWc4kQ7kNvgHoKEgZ&_nc_ht=scontent.fktm8-1.fna&_nc_gid=ArF1m4Gjrkju1G_01lpv0TR&oh=00_AYD8aXsGygkno955F3rcfSqpAUbRalH3M4xZCrXLnmNg3A&oe=66E87CE3" alt="Dipak Sah" className="h-20 w-20 rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-center text-6xl font-bold">Goals</div>
           <ul className="list-disc pl-8 my-4">
-            <li>1 Website Host</li>
-            <li>Lifetime access</li>
-            <li>Unlimited Storage</li>
-            <li>Unlimited Email Id</li>
-            <li>Unlimited Database</li>
+            <li>Developing plans
+            </li>
+            <li>Implementing strategies</li>
+            <li>Executing the project to completione</li>
+            <li>Accomplishing business plans</li>
+            <li>Outlining the project's concrete deliverables</li>
             <li>24/7 support</li>
           </ul>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
@@ -34,11 +35,11 @@ const Candidate = () => {
 
           <div className="flex items-center justify-center text-6xl font-bold">Goals</div>
           <ul className="list-disc pl-8 my-4">
-            <li>10 Website Host</li>
-            <li>Lifetime access</li>
-            <li>Unlimited Storage</li>
-            <li>Unlimited Email Id</li>
-            <li>Unlimited Database</li>
+            <li>Developing plans</li>
+            <li>Implementing strategies</li>
+            <li>Executing the project to completion</li>
+            <li>Accomplishing business plans</li>
+            <li>Outlining the project's concrete deliverables</li>
             <li>24/7 support</li>
           </ul>
           <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded w-full">
@@ -54,11 +55,11 @@ const Candidate = () => {
 
           <div className="flex items-center justify-center text-6xl font-bold">Goals</div>
           <ul className="list-disc pl-8 my-4">
-            <li>30 Website Host</li>
-            <li>Lifetime access</li>
-            <li>Unlimited Storage</li>
-            <li>Unlimited Email Id</li>
-            <li>Unlimited Database</li>
+            <li>Developing plans</li>
+             <li>Implementing strategies</li>
+             <li>Executing the project to completion</li>
+              <li>Accomplishing business plans </li>
+            <li>Outlining the project's concrete deliverables </li>
             <li>24/7 support</li>
           </ul>
           <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-full">
