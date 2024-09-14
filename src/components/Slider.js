@@ -1,53 +1,44 @@
-import React from 'react'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Swiper 7+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 const Slider = () => {
   return (
-    
-
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src=" https://assets.rumsan.net/clients/recordnepal/Qmb4rnpW4CTbxTvFRjCxKXVdifu4BnrfpvnySpxpAfKSRR" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src=" https://www.undp.org/sites/g/files/zskgke326/files/2022-08/Nepal_Mock-Election--4_web.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EvDFss5rxKINlczPz_7IZP93cqyhD6rVig&s" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src=" https://assets.rumsan.net/clients/recordnepal/1617600228925" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src=" https://www.orfonline.org/public/uploads/posts/image/Nepal-elections.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
+    <div className="w-full ">
+      <div className="flex justify-center items-center w-full">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination
+          autoplay={{ delay: 2500 }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+        >
+          <SwiperSlide>
+            <img className="w-full h-[300px] md:h-[500px] object-cover" src="https://assets.rumsan.net/clients/recordnepal/Qmb4rnpW4CTbxTvFRjCxKXVdifu4BnrfpvnySpxpAfKSRR" alt="..."/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="w-full h-[300px] md:h-[500px] object-cover" src="https://www.undp.org/sites/g/files/zskgke326/files/2022-08/Nepal_Mock-Election--4_web.jpg" alt="..."/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="w-full h-[300px] md:h-[500px] object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EvDFss5rxKINlczPz_7IZP93cqyhD6rVig&s" alt="..."/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="w-full h-[300px] md:h-[500px] object-cover" src="https://assets.rumsan.net/clients/recordnepal/1617600228925" alt="..."/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="w-full h-[300px] md:h-[500px] object-cover" src="https://www.orfonline.org/public/uploads/posts/image/Nepal-elections.jpg" alt="..."/>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
-     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
-   )
+  )
 }
 
 export default Slider
+
+
